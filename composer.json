@@ -1,0 +1,8 @@
+{
+  "name": "futuralibs/futurautils",
+  "description": "Biblioteca contendo funções reutilizadas em outros projetos/bibliotecas",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {}
+}
