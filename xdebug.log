@@ -1,0 +1,139 @@
+[17] Log opened at 2021-11-29 19:41:12.095752
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:9003.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:9003 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///usr/local/bin/composer" language="PHP" xdebug:language_version="8.1.0RC5" protocol_version="1.0" appid="17"><engine version="3.1.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2021 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] <- feature_set -i 1 -n show_hidden -v 1
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[17] [Step Debug] <- feature_set -i 2 -n max_depth -v 1
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[17] [Step Debug] <- feature_set -i 3 -n max_children -v 100
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[17] [Step Debug] <- feature_set -i 4 -n extended_properties -v 1
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[17] [Step Debug] <- feature_set -i 5 -n notify_ok -v 1
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[17] [Step Debug] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[17] [Step Debug] <- stdout -i 7 -c 1
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[17] [Step Debug] <- status -i 8
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[17] [Step Debug] <- step_into -i 9
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///usr/local/bin/composer" lineno="14"></xdebug:message></response>
+
+[17] [Step Debug] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[17] [Step Debug] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[0]]></property></response>
+
+[17] [Step Debug] <- eval -i 12 -- aXNzZXQoJF9TRVJWRVJbJ1NTSF9DT05ORUNUSU9OJ10p
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="bool"><![CDATA[0]]></property></response>
+
+[17] [Step Debug] <- eval -i 13 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9BRERSJ10p
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="bool"><![CDATA[0]]></property></response>
+
+[17] [Step Debug] <- stack_get -i 14
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="14"><stack where="{main}" level="0" type="file" filename="file:///usr/local/bin/composer" lineno="14"></stack></response>
+
+[17] [Step Debug] <- stack_get -i 15
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="15"><stack where="{main}" level="0" type="file" filename="file:///usr/local/bin/composer" lineno="14"></stack></response>
+
+[17] [Step Debug] <- context_names -i 16
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="16"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[17] [Step Debug] <- context_get -i 17 -d 0 -c 0
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="17" context="0"></response>
+
+[17] [Step Debug] <- context_get -i 18 -d 0 -c 1
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="18" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="0" numchildren="0" page="0" pagesize="100"></property><property name="$_ENV" fullname="$_ENV" type="array" children="0" numchildren="0" page="0" pagesize="100"></property><property name="$_FILES" fullname="$_FILES" type="array" children="0" numchildren="0" page="0" pagesize="100"></property><property name="$_GET" fullname="$_GET" type="array" children="0" numchildren="0" page="0" pagesize="100"></property><property name="$_POST" fullname="$_POST" type="array" children="0" numchildren="0" page="0" pagesize="100"></property><property name="$_REQUEST" fullname="$_REQUEST" type="array" children="0" numchildren="0" page="0" pagesize="100"></property><property name="$_SERVER" fullname="$_SERVER" type="array" children="1" numchildren="26" page="0" pagesize="100"><property name="HOSTNAME" fullname="$_SERVER[&quot;HOSTNAME&quot;]" type="string" size="12" encoding="base64"><![CDATA[ZDhmZTUzYzAxY2Rh]]></property><property name="PHP_VERSION" fullname="$_SERVER[&quot;PHP_VERSION&quot;]" type="string" size="8" encoding="base64"><![CDATA[OC4xLjBSQzU=]]></property><property name="PHP_INI_DIR" fullname="$_SERVER[&quot;PHP_INI_DIR&quot;]" type="string" size="18" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9ldGMvcGhw]]></property><property name="GPG_KEYS" fullname="$_SERVER[&quot;GPG_KEYS&quot;]" type="string" size="122" encoding="base64"><![CDATA[NTI4OTk1QkZFREZCQTcxOTFENDY4MzlFRjlCQTBBREEzMUNCRDg5RSAzOUI2NDEzNDNEOEMxMDRCMkIxNDZEQzNGOUMzOURDMEI5Njk4NTQ0IEYxRjY5MjIzOEZCQzE2NjZFNUE1Q0NENDE5OUY5REZFRjZGRkJBRkQ=]]></property><property name="PHP_LDFLAGS" fullname="$_SERVER[&quot;PHP_LDFLAGS&quot;]" type="string" size="12" encoding="base64"><![CDATA[LVdsLC1PMSAtcGll]]></property><property name="PWD" fullname="$_SERVER[&quot;PWD&quot;]" type="string" size="13" encoding="base64"><![CDATA[L3Zhci93d3cvaHRtbA==]]></property><property name="HOME" fullname="$_SERVER[&quot;HOME&quot;]" type="string" size="5" encoding="base64"><![CDATA[L3Jvb3Q=]]></property><property name="PHP_SHA256" fullname="$_SERVER[&quot;PHP_SHA256&quot;]" type="string" size="64" encoding="base64"><![CDATA[MzIyMjU4NzE3YmVkMzg4NTY3YmYzNjM3ZmQ4OTIxYWExOTdjZGU1N2JiNzRmYjVjMDIwNTE3MTY1ZTY4MTJiOA==]]></property><property type="string" size="76"><name encoding="base64"><![CDATA[UEhQSVpFX0RFUFM=]]></name><fullname encoding="base64"><![CDATA[JF9TRVJWRVJbIlBIUElaRV9ERVBTIl0=]]></fullname><value encoding="base64"><![CDATA[YXV0b2NvbmYgCQlkcGtnLWRldiAJCWZpbGUgCQlnKysgCQlnY2MgCQlsaWJjLWRldiAJCW1ha2UgCQlwa2ctY29uZmlnIAkJcmUyYw==]]></value></property><property name="TERM" fullname="$_SERVER[&quot;TERM&quot;]" type="string" size="5" encoding="base64"><![CDATA[eHRlcm0=]]></property><property name="PHP_URL" fullname="$_SERVER[&quot;PHP_URL&quot;]" type="string" size="61" encoding="base64"><![CDATA[aHR0cHM6Ly9kb3dubG9hZHMucGhwLm5ldC9+cGF0cmlja2FsbGFlcnQvcGhwLTguMS4wUkM1LnRhci54eg==]]></property><property name="SHLVL" fullname="$_SERVER[&quot;SHLVL&quot;]" type="string" size="1" encoding="base64"><![CDATA[MQ==]]></property><property name="PHP_CFLAGS" fullname="$_SERVER[&quot;PHP_CFLAGS&quot;]" type="string" size="83" encoding="base64"><![CDATA[LWZzdGFjay1wcm90ZWN0b3Itc3Ryb25nIC1mcGljIC1mcGllIC1PMiAtRF9MQVJHRUZJTEVfU09VUkNFIC1EX0ZJTEVfT0ZGU0VUX0JJVFM9NjQ=]]></property><property name="PATH" fullname="$_SERVER[&quot;PATH&quot;]" type="string" size="60" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmlu]]></property><property name="PHP_ASC_URL" fullname="$_SERVER[&quot;PHP_ASC_URL&quot;]" type="string" size="65" encoding="base64"><![CDATA[aHR0cHM6Ly9kb3dubG9hZHMucGhwLm5ldC9+cGF0cmlja2FsbGFlcnQvcGhwLTguMS4wUkM1LnRhci54ei5hc2M=]]></property><property name="PHP_CPPFLAGS" fullname="$_SERVER[&quot;PHP_CPPFLAGS&quot;]" type="string" size="83" encoding="base64"><![CDATA[LWZzdGFjay1wcm90ZWN0b3Itc3Ryb25nIC1mcGljIC1mcGllIC1PMiAtRF9MQVJHRUZJTEVfU09VUkNFIC1EX0ZJTEVfT0ZGU0VUX0JJVFM9NjQ=]]></property><property name="_" fullname="$_SERVER[&quot;_&quot;]" type="string" size="23" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9iaW4vY29tcG9zZXI=]]></property><property name="PHP_SELF" fullname="$_SERVER[&quot;PHP_SELF&quot;]" type="string" size="23" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9iaW4vY29tcG9zZXI=]]></property><property name="SCRIPT_NAME" fullname="$_SERVER[&quot;SCRIPT_NAME&quot;]" type="string" size="23" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9iaW4vY29tcG9zZXI=]]></property><property name="SCRIPT_FILENAME" fullname="$_SERVER[&quot;SCRIPT_FILENAME&quot;]" type="string" size="23" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9iaW4vY29tcG9zZXI=]]></property><property name="PATH_TRANSLATED" fullname="$_SERVER[&quot;PATH_TRANSLATED&quot;]" type="string" size="23" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9iaW4vY29tcG9zZXI=]]></property><property name="DOCUMENT_ROOT" fullname="$_SERVER[&quot;DOCUMENT_ROOT&quot;]" type="string" size="0" encoding="base64"><![CDATA[]]></property><property name="REQUEST_TIME_FLOAT" fullname="$_SERVER[&quot;REQUEST_TIME_FLOAT&quot;]" type="float"><![CDATA[1638214872.0957]]></property><property name="REQUEST_TIME" fullname="$_SERVER[&quot;REQUEST_TIME&quot;]" type="int"><![CDATA[1638214872]]></property><property name="argv" fullname="$_SERVER[&quot;argv&quot;]" type="array" children="1" numchildren="2"></property><property name="argc" fullname="$_SERVER[&quot;argc&quot;]" type="int"><![CDATA[2]]></property></property></response>
+
+[17] [Step Debug] <- context_get -i 19 -d 0 -c 2
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="19" context="2"></response>
+
+[20] Log opened at 2021-11-29 19:41:45.759471
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:9003.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:9003 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///usr/local/bin/composer" language="PHP" xdebug:language_version="8.1.0RC5" protocol_version="1.0" appid="20"><engine version="3.1.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2021 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] <- feature_set -i 1 -n show_hidden -v 1
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[20] [Step Debug] <- feature_set -i 2 -n max_depth -v 1
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[20] [Step Debug] <- feature_set -i 3 -n max_children -v 100
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[20] [Step Debug] <- feature_set -i 4 -n extended_properties -v 1
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[20] [Step Debug] <- feature_set -i 5 -n notify_ok -v 1
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[20] [Step Debug] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[20] [Step Debug] <- stdout -i 7 -c 1
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[20] [Step Debug] <- status -i 8
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[20] [Step Debug] <- step_into -i 9
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///usr/local/bin/composer" lineno="14"></xdebug:message></response>
+
+[20] [Step Debug] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[20] [Step Debug] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[0]]></property></response>
+
+[20] [Step Debug] <- eval -i 12 -- aXNzZXQoJF9TRVJWRVJbJ1NTSF9DT05ORUNUSU9OJ10p
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="bool"><![CDATA[0]]></property></response>
+
+[20] [Step Debug] <- eval -i 13 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9BRERSJ10p
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="bool"><![CDATA[0]]></property></response>
+
+[20] [Step Debug] <- stack_get -i 14
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="14"><stack where="{main}" level="0" type="file" filename="file:///usr/local/bin/composer" lineno="14"></stack></response>
+
+[20] [Step Debug] <- stack_get -i 15
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="15"><stack where="{main}" level="0" type="file" filename="file:///usr/local/bin/composer" lineno="14"></stack></response>
+
+[20] [Step Debug] <- context_names -i 16
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="16"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[20] [Step Debug] <- context_get -i 17 -d 0 -c 0
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="17" context="0"></response>
+
+[20] [Step Debug] <- context_get -i 18 -d 0 -c 1
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="18" context="1"><property name="$_COOKIE" fullname="$_COOKIE" type="array" children="0" numchildren="0" page="0" pagesize="100"></property><property name="$_ENV" fullname="$_ENV" type="array" children="0" numchildren="0" page="0" pagesize="100"></property><property name="$_FILES" fullname="$_FILES" type="array" children="0" numchildren="0" page="0" pagesize="100"></property><property name="$_GET" fullname="$_GET" type="array" children="0" numchildren="0" page="0" pagesize="100"></property><property name="$_POST" fullname="$_POST" type="array" children="0" numchildren="0" page="0" pagesize="100"></property><property name="$_REQUEST" fullname="$_REQUEST" type="array" children="0" numchildren="0" page="0" pagesize="100"></property><property name="$_SERVER" fullname="$_SERVER" type="array" children="1" numchildren="27" page="0" pagesize="100"><property name="HOSTNAME" fullname="$_SERVER[&quot;HOSTNAME&quot;]" type="string" size="12" encoding="base64"><![CDATA[ZDhmZTUzYzAxY2Rh]]></property><property name="PHP_VERSION" fullname="$_SERVER[&quot;PHP_VERSION&quot;]" type="string" size="8" encoding="base64"><![CDATA[OC4xLjBSQzU=]]></property><property name="PHP_INI_DIR" fullname="$_SERVER[&quot;PHP_INI_DIR&quot;]" type="string" size="18" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9ldGMvcGhw]]></property><property name="GPG_KEYS" fullname="$_SERVER[&quot;GPG_KEYS&quot;]" type="string" size="122" encoding="base64"><![CDATA[NTI4OTk1QkZFREZCQTcxOTFENDY4MzlFRjlCQTBBREEzMUNCRDg5RSAzOUI2NDEzNDNEOEMxMDRCMkIxNDZEQzNGOUMzOURDMEI5Njk4NTQ0IEYxRjY5MjIzOEZCQzE2NjZFNUE1Q0NENDE5OUY5REZFRjZGRkJBRkQ=]]></property><property name="PHP_LDFLAGS" fullname="$_SERVER[&quot;PHP_LDFLAGS&quot;]" type="string" size="12" encoding="base64"><![CDATA[LVdsLC1PMSAtcGll]]></property><property name="PWD" fullname="$_SERVER[&quot;PWD&quot;]" type="string" size="13" encoding="base64"><![CDATA[L3Zhci93d3cvaHRtbA==]]></property><property name="HOME" fullname="$_SERVER[&quot;HOME&quot;]" type="string" size="5" encoding="base64"><![CDATA[L3Jvb3Q=]]></property><property name="PHP_SHA256" fullname="$_SERVER[&quot;PHP_SHA256&quot;]" type="string" size="64" encoding="base64"><![CDATA[MzIyMjU4NzE3YmVkMzg4NTY3YmYzNjM3ZmQ4OTIxYWExOTdjZGU1N2JiNzRmYjVjMDIwNTE3MTY1ZTY4MTJiOA==]]></property><property type="string" size="76"><name encoding="base64"><![CDATA[UEhQSVpFX0RFUFM=]]></name><fullname encoding="base64"><![CDATA[JF9TRVJWRVJbIlBIUElaRV9ERVBTIl0=]]></fullname><value encoding="base64"><![CDATA[YXV0b2NvbmYgCQlkcGtnLWRldiAJCWZpbGUgCQlnKysgCQlnY2MgCQlsaWJjLWRldiAJCW1ha2UgCQlwa2ctY29uZmlnIAkJcmUyYw==]]></value></property><property name="TERM" fullname="$_SERVER[&quot;TERM&quot;]" type="string" size="5" encoding="base64"><![CDATA[eHRlcm0=]]></property><property name="PHP_URL" fullname="$_SERVER[&quot;PHP_URL&quot;]" type="string" size="61" encoding="base64"><![CDATA[aHR0cHM6Ly9kb3dubG9hZHMucGhwLm5ldC9+cGF0cmlja2FsbGFlcnQvcGhwLTguMS4wUkM1LnRhci54eg==]]></property><property name="SHLVL" fullname="$_SERVER[&quot;SHLVL&quot;]" type="string" size="1" encoding="base64"><![CDATA[MQ==]]></property><property name="PHP_CFLAGS" fullname="$_SERVER[&quot;PHP_CFLAGS&quot;]" type="string" size="83" encoding="base64"><![CDATA[LWZzdGFjay1wcm90ZWN0b3Itc3Ryb25nIC1mcGljIC1mcGllIC1PMiAtRF9MQVJHRUZJTEVfU09VUkNFIC1EX0ZJTEVfT0ZGU0VUX0JJVFM9NjQ=]]></property><property name="PATH" fullname="$_SERVER[&quot;PATH&quot;]" type="string" size="60" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmlu]]></property><property name="PHP_ASC_URL" fullname="$_SERVER[&quot;PHP_ASC_URL&quot;]" type="string" size="65" encoding="base64"><![CDATA[aHR0cHM6Ly9kb3dubG9hZHMucGhwLm5ldC9+cGF0cmlja2FsbGFlcnQvcGhwLTguMS4wUkM1LnRhci54ei5hc2M=]]></property><property name="PHP_CPPFLAGS" fullname="$_SERVER[&quot;PHP_CPPFLAGS&quot;]" type="string" size="83" encoding="base64"><![CDATA[LWZzdGFjay1wcm90ZWN0b3Itc3Ryb25nIC1mcGljIC1mcGllIC1PMiAtRF9MQVJHRUZJTEVfU09VUkNFIC1EX0ZJTEVfT0ZGU0VUX0JJVFM9NjQ=]]></property><property name="_" fullname="$_SERVER[&quot;_&quot;]" type="string" size="23" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9iaW4vY29tcG9zZXI=]]></property><property name="OLDPWD" fullname="$_SERVER[&quot;OLDPWD&quot;]" type="string" size="17" encoding="base64"><![CDATA[L3Zhci93d3cvaHRtbC9zcmM=]]></property><property name="PHP_SELF" fullname="$_SERVER[&quot;PHP_SELF&quot;]" type="string" size="23" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9iaW4vY29tcG9zZXI=]]></property><property name="SCRIPT_NAME" fullname="$_SERVER[&quot;SCRIPT_NAME&quot;]" type="string" size="23" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9iaW4vY29tcG9zZXI=]]></property><property name="SCRIPT_FILENAME" fullname="$_SERVER[&quot;SCRIPT_FILENAME&quot;]" type="string" size="23" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9iaW4vY29tcG9zZXI=]]></property><property name="PATH_TRANSLATED" fullname="$_SERVER[&quot;PATH_TRANSLATED&quot;]" type="string" size="23" encoding="base64"><![CDATA[L3Vzci9sb2NhbC9iaW4vY29tcG9zZXI=]]></property><property name="DOCUMENT_ROOT" fullname="$_SERVER[&quot;DOCUMENT_ROOT&quot;]" type="string" size="0" encoding="base64"><![CDATA[]]></property><property name="REQUEST_TIME_FLOAT" fullname="$_SERVER[&quot;REQUEST_TIME_FLOAT&quot;]" type="float"><![CDATA[1638214905.7595]]></property><property name="REQUEST_TIME" fullname="$_SERVER[&quot;REQUEST_TIME&quot;]" type="int"><![CDATA[1638214905]]></property><property name="argv" fullname="$_SERVER[&quot;argv&quot;]" type="array" children="1" numchildren="2"></property><property name="argc" fullname="$_SERVER[&quot;argc&quot;]" type="int"><![CDATA[2]]></property></property></response>
+
+[20] [Step Debug] <- context_get -i 19 -d 0 -c 2
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="19" context="2"></response>
+
+[20] [Step Debug] <- stop -i 20
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="20" status="stopped" reason="ok"></response>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="20" status="stopping" reason="ok"></response>
+
+[20] [Step Debug] <- detach -i 21
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="detach" transaction_id="21" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2021-11-29 19:41:52.861764
+
+[21] Log opened at 2021-11-29 19:42:05.359882
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:9003.
+[21] [Step Debug] ERR: Time-out connecting to debugging client, waited: 200 ms. Tried: host.docker.internal:9003 (through xdebug.client_host/xdebug.client_port) :-(
+[21] Log closed at 2021-11-29 19:43:09.003519
+

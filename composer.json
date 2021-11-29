@@ -1,7 +1,12 @@
 {
-  "name": "futuralibs/futurautils",
-  "description": "Biblioteca contendo funções reutilizadas em outros projetos/bibliotecas",
-  "type": "library",
-  "license": "MIT",
-  "require": {}
+    "name": "futuralibs/futurautils",
+    "description": "Biblioteca contendo funções reutilizadas em outros projetos/bibliotecas",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Futuralibs\\Futurautils\\": "src/"
+        }
+    },
+    "require": {}
 }
