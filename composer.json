@@ -8,5 +8,10 @@
             "Futuralibs\\Futurautils\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "symfony/validator": "^6.0",
+        "doctrine/annotations": "^1.13",
+        "symfony/cache": "^6.0",
+        "symfony/finder": "^6.0"
+    }
 }
