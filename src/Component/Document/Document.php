@@ -63,7 +63,7 @@ class Document extends AbstractComponent
      */
     public function setNumber(string $number): self
     {
-        $this->number = preg_replace('/[^0-9]/', '', $number);
+        $this->number = $number;
         return $this;
     }
 
