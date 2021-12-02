@@ -13,4 +13,5 @@ enum TypeHttpMethod: String{
     case GET  = 'GET';
     case PUT  = 'PUT';
     case PATCH  = 'PATCH';
+    case DELETE = 'DELETE';
 }

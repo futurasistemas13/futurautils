@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Futuralibs\Futurautils\Trait\Serializer;
+namespace Futuralibs\Futurautils\Trait\JsonSerializable;
 
 trait JsonWithOutNull
 {
