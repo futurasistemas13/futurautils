@@ -13,6 +13,14 @@ abstract class AbstractComponent implements \JsonSerializable
     {
         $class = [];
         $reflection = new \ReflectionClass(get_class($this));
+
+        while ($parent = $reflection->getParentClass()) {
+            foreach ($parent->getProperties() as $property) {
+                $property->setAccessible(true);
+                $class[$property->getName()] = $property->getValue($this);
+            }
+        }
+
         foreach ($reflection->getProperties() as $property) {
             $property->setAccessible(true);
             $class[$property->getName()] = $property->getValue($this);
