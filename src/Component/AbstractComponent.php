@@ -14,7 +14,7 @@ abstract class AbstractComponent implements \JsonSerializable
         $class = [];
         $reflection = new \ReflectionClass(get_class($this));
 
-        while ($parent = $reflection->getParentClass()) {
+        foreach ($reflection->getParentClass() as $parent) {
             foreach ($parent->getProperties() as $property) {
                 $property->setAccessible(true);
                 $class[$property->getName()] = $property->getValue($this);
