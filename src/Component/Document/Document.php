@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Futuralibs\Futurautils\Component\Document;
 
-use Futuralibs\Futurautils\Component\AbstractComponent;
+use Futuralibs\Futurautils\Component\Component;
 use Symfony\Component\Validator\Constraints as Assert;
 use Futuralibs\Futurautils\Component\Document\Constraint as ComponentAssert;
 use Futuralibs\Futurautils\Constraint as ConstraintAssert;
@@ -11,7 +11,7 @@ use Futuralibs\Futurautils\Constraint as ConstraintAssert;
 /**
  * @ComponentAssert\CpfCnpj(mask="true")
  */
-class Document extends AbstractComponent
+class Document extends Component
 {
 
     /**

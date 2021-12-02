@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Futuralibs\Futurautils\Component\Document\Constraint;
 
-use Futuralibs\Futurautils\Component\Document\Constraint\CpfCnpj;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 use Symfony\Component\Validator\Exception\ConstraintDefinitionException;
