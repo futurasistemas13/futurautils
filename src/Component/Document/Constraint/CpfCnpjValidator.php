@@ -72,7 +72,7 @@ class CpfCnpjValidator extends ConstraintValidator
     protected function maskValidator(mixed $object, CpfCnpj $constraint): bool
     {
 
-        if (($object->getType() === self::CPF) && !preg_match(self::CPF_REGEXP, $object->getNumber())) {
+        if (!($object->getType() === self::CPF) && !preg_match(self::CPF_REGEXP, $object->getNumber())) {
             return false;
         } else if (($object->getType() === self::CNPJ)  && !preg_match(self::CNPJ_REGEXP, $object->getNumber())) {
             return false;
