@@ -29,7 +29,7 @@ class CpfCnpjValidator extends ConstraintValidator
     public function validate(mixed $value, Constraint $constraint)
     {
         if (!$constraint instanceof CpfCnpj) {
-            throw new UnexpectedTypeException($constraint, __NAMESPACE__ . '\CpfCnpj');
+            throw new UnexpectedTypeException($constraint, CpfCnpj::class);
         }
 
         if (($value->getType() !== null ) && (!in_array(strtoupper($value->getType()), [self::CPF, self::CNPJ]))) {
@@ -98,7 +98,7 @@ class CpfCnpjValidator extends ConstraintValidator
 
         //Verificando se há números repetidos como: 0000000000, 1111111111, etc
         for ($i = 0; $i <= 9; $i++) {
-            $repetidos = str_pad('', strlen($number), $i);
+            $repetidos = str_pad('', strlen($number), (string)$i);
             if ($number === $repetidos) {
                 return false;
             }
