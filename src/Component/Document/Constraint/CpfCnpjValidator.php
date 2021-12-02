@@ -55,7 +55,7 @@ class CpfCnpjValidator extends ConstraintValidator
         if ($constraint->mask && !$this->maskValidator($value, $constraint)) {
             $this->context->addViolation(
                 $constraint->messageMask,
-                array('{{ mask }}' => $this->document ? self::CNPJ : self::CPF)
+                array('{{ mask }}' => $value->getNumber())
             );
 
             return false;
