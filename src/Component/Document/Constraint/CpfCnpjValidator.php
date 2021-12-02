@@ -92,7 +92,7 @@ class CpfCnpjValidator extends ConstraintValidator
     {
         $number = preg_replace('/[^0-9]/', '', $object->getNumber());
 
-        if (empty($value)) {
+        if (empty($number)) {
             return false;
         }
 
