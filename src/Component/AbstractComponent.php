@@ -3,8 +3,6 @@ declare(strict_types=1);
 
 namespace Futuralibs\Futurautils\Component;
 
-use Futuralibs\Futurautils\Serializer\JsonWithOutNull;
-
 abstract class AbstractComponent implements \JsonSerializable
 {
     /**
