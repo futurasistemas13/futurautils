@@ -5,17 +5,18 @@ namespace Futuralibs\Futurautils\Component\Document;
 
 use Futuralibs\Futurautils\Component\AbstractComponent;
 use Symfony\Component\Validator\Constraints as Assert;
-use Futuralibs\Futurautils\Component\Document\Constraint as MyAssert;
+use Futuralibs\Futurautils\Component\Constraint as ComponentAssert;
+use Futuralibs\Futurautils\Constraint as ConstraintAssert;
 
 /**
- * @MyAssert\CpfCnpj(mask="true")
+ * @ComponentAssert\CpfCnpj(mask="true")
  */
 class Document extends AbstractComponent
 {
 
     /**
      * @var string|null
-     * @MyAssert\Optional({
+     * @ConstraintAssert\Optional({
      *      @Assert\NotBlank,
      *      @Assert\NotNull,
      *      @Assert\Choice(callback={"Futuralibs\Futurautils\Type\TypeDocument", "getArray"})
