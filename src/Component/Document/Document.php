@@ -5,7 +5,7 @@ namespace Futuralibs\Futurautils\Component\Document;
 
 use Futuralibs\Futurautils\Component\AbstractComponent;
 use Symfony\Component\Validator\Constraints as Assert;
-use Futuralibs\Futurautils\Component\Constraint as ComponentAssert;
+use Futuralibs\Futurautils\Component\Document\Constraint as ComponentAssert;
 use Futuralibs\Futurautils\Constraint as ConstraintAssert;
 
 /**
