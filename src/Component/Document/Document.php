@@ -31,13 +31,6 @@ class Document extends AbstractComponent
     private string $number;
 
     /**
-     * @var string
-     * @Assert\NotBlank
-     * @Assert\NotNull
-     */
-    private string $name;
-
-    /**
      * @return string|null
      */
     public function getType(): ?string
@@ -70,24 +63,6 @@ class Document extends AbstractComponent
     public function setNumber(string $number): self
     {
         $this->number = preg_replace('/[^0-9]/', '', $number);
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getName(): string
-    {
-        return $this->name;
-    }
-
-    /**
-     * @param string $name
-     * @return Document
-     */
-    public function setName(string $name): self
-    {
-        $this->name = $name;
         return $this;
     }
 
