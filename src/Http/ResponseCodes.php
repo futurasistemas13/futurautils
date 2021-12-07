@@ -35,22 +35,22 @@ class ResponseCodes{
         return $statusCode >= 500 && $statusCode < 600;
     }
 
-    public function isOk(int $statusCode): bool
+    public static function isOk(int $statusCode): bool
     {
         return 200 === $statusCode;
     }
 
-    public function isForbidden(int $statusCode): bool
+    public static function isForbidden(int $statusCode): bool
     {
         return 403 === $statusCode;
     }
 
-    public function isNotFound(int $statusCode): bool
+    public static function isNotFound(int $statusCode): bool
     {
         return 404 === $statusCode;
     }
 
-    public function isEmpty(int $statusCode): bool
+    public static function isEmpty(int $statusCode): bool
     {
         return \in_array($statusCode, [204, 304]);
     }
