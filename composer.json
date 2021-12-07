@@ -1,4 +1,6 @@
 {
+    "minimum-stability": "dev",
+    "prefer-stable": false,
     "name": "futuralibs/futurautils",
     "description": "Biblioteca contendo funções reutilizadas em outros projetos/bibliotecas",
     "type": "library",
