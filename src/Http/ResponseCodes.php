@@ -3,11 +3,12 @@ declare(strict_types=1);
 
 namespace Futuralibs\Futurautils\Http;
 
-class ResponseCodes{
+class ResponseCodes
+{
 
     public static function isInvalid(int $statusCode): bool
     {
-        return $statusCode < 100 || $statusCode >= 600; 
+        return $statusCode < 100 || $statusCode >= 600;
     }
 
     public static function isInformational(int $statusCode): bool
@@ -17,7 +18,7 @@ class ResponseCodes{
 
     public static function isSuccessful(int $statusCode): bool
     {
-        return $statusCode >= 200 && $statusCode < 300; 
+        return $statusCode >= 200 && $statusCode < 300;
     }
 
     public static function isRedirection(int $statusCode): bool
