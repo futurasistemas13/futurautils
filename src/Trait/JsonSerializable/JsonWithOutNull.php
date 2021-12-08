@@ -12,8 +12,12 @@ trait JsonWithOutNull
      */
     public function jsonSerialize(): array
     {
+        return $this->serializeRecursive($this);
+    }
+
+    private function serializeRecursive($obj){
         $return     = array();
-        $reflection = new \ReflectionClass(get_class($this));
+        $reflection = new \ReflectionClass(get_class($obj));
 
         $attributes = $reflection->getProperties();
         while($reflection->getParentClass()){
@@ -34,23 +38,23 @@ trait JsonWithOutNull
             }
 
             $prop->setAccessible(true);
-            if(is_array($prop->getValue($this))){
-                if(count($prop->getValue($this)) > 0){
-                    foreach($prop->getValue($this) as $item){
+            if(is_array($prop->getValue($obj))){
+                if(count($prop->getValue($obj)) > 0){
+                    foreach($prop->getValue($obj) as $item){
                         if(is_object($item)){
-                            $return[$prop->getName()][]  =  $this->jsonSerialize($item);  
+                            $return[$prop->getName()][]  =  $this->serializeRecursive($item);  
                         }else{
-                            $return[$prop->getName()] =  $prop->getValue($this);  
+                            $return[$prop->getName()] =  $prop->getValue($obj);  
                         }
                     }
                 }else{
                     $return[$prop->getName()] = array();
                 }
 
-            }elseif(is_object($prop->getValue($this))){
-                $return[$prop->getName()] = $this->jsonSerialize($prop->getValue($this));
+            }elseif(is_object($prop->getValue($obj))){
+                $return[$prop->getName()] = $this->serializeRecursive($prop->getValue($obj));
             }else{
-                $return[$prop->getName()] =  $prop->getValue($this);
+                $return[$prop->getName()] =  $prop->getValue($obj);
             }
         }
         return $return;
