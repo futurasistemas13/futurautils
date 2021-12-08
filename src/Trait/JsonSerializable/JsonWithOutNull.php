@@ -38,7 +38,7 @@ trait JsonWithOutNull
                 if(count($prop->getValue($this)) > 0){
                     foreach($prop->getValue($this) as $item){
                         if(is_object($item)){
-                            $return[$prop->getName()][]  =  $this->convert($item);  
+                            $return[$prop->getName()][]  =  $this->jsonSerialize($item);  
                         }else{
                             $return[$prop->getName()] =  $prop->getValue($this);  
                         }
@@ -48,7 +48,7 @@ trait JsonWithOutNull
                 }
 
             }elseif(is_object($prop->getValue($this))){
-                $return[$prop->getName()] = $this->convert($prop->getValue($this));
+                $return[$prop->getName()] = $this->jsonSerialize($prop->getValue($this));
             }else{
                 $return[$prop->getName()] =  $prop->getValue($this);
             }
