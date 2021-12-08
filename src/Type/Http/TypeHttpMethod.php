@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Futuralibs\Futurautils\Type;
+namespace Futuralibs\Futurautils\Type\Http;
 
 use Futuralibs\Futurautils\Trait\EnumTrait;
 
