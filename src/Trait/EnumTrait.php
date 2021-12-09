@@ -15,4 +15,14 @@ trait EnumTrait
         return $array;
     }
 
+    public static function getKeys(): array
+    {
+        return array_keys(self::getArray());
+    }
+
+    public static function getValues(): array
+    {
+        return array_values(self::getArray());
+    }
+
 }
