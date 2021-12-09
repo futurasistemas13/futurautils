@@ -29,25 +29,35 @@ trait JsonWithOutNull
 
         foreach($attributes  as $prop){
             $attributeList = $prop->getAttributes();
+            
+            $skipField = false;
             if(count($attributeList) > 0){
                 foreach($attributeList as $attr){
+                    $ignoreField = false;
                     if(array_key_exists($IGNORE, $attr->getArguments())){
                         foreach($attr->getArguments()[$IGNORE] as $arg){
                             if(($arg == TypeAttributeIgnore::IgnoreNull) && (is_null($prop->getValue($obj)))){
+                                $ignoreField = true;
                                 continue;
                             }
 
-                            if(($arg == TypeAttributeIgnore::IgnoreEmpty) && (empty($prop->getValue($obj)))){
+                            if(($arg == TypeAttributeIgnore::IgnoreEmpty) && (($prop->getValue($obj) === ''))){
+                                $ignoreField = true;
                                 continue;
                             }
                         }
                     }
 
-                    if(!($attr->getName() == Serializable::class)){
+                    if(($ignoreField) || ((!$attr->getName() == Serializable::class))){
+                        $skipField = true;
                         continue;
                     }
                 }
             }else{
+                $skipField = true;
+                continue;
+            }
+            if($skipField){
                 continue;
             }
 
