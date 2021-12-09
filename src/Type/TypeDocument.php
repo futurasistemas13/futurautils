@@ -4,10 +4,19 @@ namespace Futuralibs\Futurautils\Type;
 
 use Futuralibs\Futurautils\Trait\EnumTrait;
 
-enum TypeDocument: String {
+enum TypeDocument: int {
 
     use EnumTrait ;
 
-    case CPF = 'CPF';
-    case CNPJ = 'CNPJ';
+    case CPF = 1;
+    case CNPJ = 2;
+
+    public function document(): string
+    {
+        return match($this)
+        {
+            self::CPF => 'CPF',
+            self::CNPJ => 'CNPJ',
+        };
+    }
 }
