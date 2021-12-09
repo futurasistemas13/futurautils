@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Futuralibs\Futurautils\Collection;
 
-use Futuralibs\Futurautils\Collection\ArrayAccess;
+use Futuralibs\Futurautils\Interface\ArrayAccess;
 
 class ArrayCollection implements ArrayAccess
 {

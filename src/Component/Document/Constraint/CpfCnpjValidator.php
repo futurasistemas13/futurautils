@@ -97,7 +97,7 @@ class CpfCnpjValidator extends ConstraintValidator
 
         //Verificando se há números repetidos como: 0000000000, 1111111111, etc
         for ($i = 0; $i <= 9; $i++) {
-            $repetidos = str_pad('', strlen($number), (string)$i);
+            $repetidos = str_pad('', strlen($number), (string) $i);
             if ($number === $repetidos) {
                 return false;
             }

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Futuralibs\Futurautils\Collection;
+namespace Futuralibs\Futurautils\Interface;
 
 interface ArrayAccess
 {
