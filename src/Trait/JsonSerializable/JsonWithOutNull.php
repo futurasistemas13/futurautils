@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Futuralibs\Futurautils\Trait\JsonSerializable;
 
 use Serializable;
+use Futuralibs\Futurautils\Type\TypeAttributeIgnore;
 
 trait JsonWithOutNull
 {
@@ -16,6 +17,7 @@ trait JsonWithOutNull
     }
 
     private function serializeRecursive($obj){
+        $IGNORE      = 'ignore';
         $return     = array();
         $reflection = new \ReflectionClass(get_class($obj));
 
@@ -29,6 +31,18 @@ trait JsonWithOutNull
             $attributeList = $prop->getAttributes();
             if(count($attributeList) > 0){
                 foreach($attributeList as $attr){
+                    if(array_key_exists($IGNORE, $attr->getArguments())){
+                        foreach($attr->getArguments()[$IGNORE] as $arg){
+                            if(($arg == TypeAttributeIgnore::IgnoreNull) && (is_null($prop->getValue($obj)))){
+                                continue;
+                            }
+
+                            if(($arg == TypeAttributeIgnore::IgnoreEmpty) && (empty($prop->getValue($obj)))){
+                                continue;
+                            }
+                        }
+                    }
+
                     if(!($attr->getName() == Serializable::class)){
                         continue;
                     }
