@@ -19,4 +19,17 @@ enum TypeDocument: int {
             self::CNPJ => 'CNPJ',
         };
     }
+
+    /**
+     * @throws Exception
+     */
+    public static function find(string $status): int
+    {
+        return match($status)
+        {
+            self::CPF->document() => self::CPF->value,
+            self::CNPJ->document() => self::CNPJ->value,
+            default => throw new Exception('Unexpected match value'),
+        };
+    }
 }
