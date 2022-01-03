@@ -23,9 +23,9 @@ enum TypeDocument: int {
     /**
      * @throws Exception
      */
-    public static function find(string $status): int
+    public static function find(string $document): int
     {
-        return match($status)
+        return match($document)
         {
             self::CPF->document() => self::CPF->value,
             self::CNPJ->document() => self::CNPJ->value,
