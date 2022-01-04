@@ -46,7 +46,7 @@ trait EnumTrait
     /**
      * @throws Exception
      */
-    public static function findIndex(int $index)
+    public static function findValue(string|int $index)
     {
         $find = array_filter(self::cases(), function($value) use ($index) {
             return $value->value == $index;
