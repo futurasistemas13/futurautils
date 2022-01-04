@@ -11,7 +11,7 @@ enum TypeDocument: int {
     case CPF = 1;
     case CNPJ = 2;
 
-    public function document(): string
+    public function getName(): string
     {
         return match($this)
         {
@@ -27,8 +27,8 @@ enum TypeDocument: int {
     {
         return match($document)
         {
-            self::CPF->document() => self::CPF->value,
-            self::CNPJ->document() => self::CNPJ->value,
+            self::CPF->getName() => self::CPF,
+            self::CNPJ->getName() => self::CNPJ,
             default => throw new Exception('Unexpected match value'),
         };
     }
