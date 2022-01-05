@@ -36,7 +36,7 @@ trait EnumTrait
             return $value->name == $match;
         });
 
-        if ($find === null) {
+        if ($find === null || count($find) === 0 ) {
             throw new Exception('Unexpected match value');
         }
 
@@ -52,7 +52,7 @@ trait EnumTrait
             return $value->value == $index;
         });
 
-        if ($find === null) {
+        if ($find === null || count($find) === 0 ) {
             throw new Exception('Unexpected match value');
         }
 
