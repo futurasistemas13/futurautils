@@ -37,7 +37,7 @@ trait EnumTrait
         });
 
         if ($find === null || count($find) === 0 ) {
-            throw new Exception('Unexpected match value');
+            throw new Exception('Unexpected match value '.$match.' in '.get_class(self::cases()[0]));
         }
 
         return current($find);
@@ -53,7 +53,7 @@ trait EnumTrait
         });
 
         if ($find === null || count($find) === 0 ) {
-            throw new Exception('Unexpected match value');
+            throw new Exception('Unexpected match value '.$match.' in '.get_class(self::cases()[0]));
         }
 
         return current($find);
