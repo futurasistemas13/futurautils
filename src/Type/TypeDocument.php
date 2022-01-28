@@ -2,9 +2,11 @@
 
 namespace Futuralibs\Futurautils\Type;
 
+use App\Interface\TypeInterface;
 use Futuralibs\Futurautils\Trait\EnumTrait;
 
-enum TypeDocument: int {
+enum TypeDocument: int implements TypeInterface
+{
 
     use EnumTrait ;
 

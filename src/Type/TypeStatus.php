@@ -4,9 +4,11 @@ declare(strict_types=1);
 namespace Futuralibs\Futurautils\Type;
 
 
+use App\Interface\TypeInterface;
 use Futuralibs\Futurautils\Trait\EnumTrait;
 
-enum TypeStatus: int {
+enum TypeStatus: int implements TypeInterface
+{
 
     use EnumTrait;
 
